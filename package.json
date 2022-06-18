@@ -1,0 +1,19 @@
+{
+  "name": "friendzone",
+  "version": "1.0.0",
+  "description": "An API for a social media application built with MongoDB, Mongoose, and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rbenney15/friendzone.git"
+  },
+  "homepage": "https://github.com/Rbenney15/friendzone#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.0"
+  }
+}
