@@ -2,22 +2,14 @@ const { Thought, User } = require("../models");
 
 const thoughtController = {
   // get all thoughts
-  getAllThoughts(req, res) {
-    Thought.find({})
-      .populate({
-        path: "reactions",
-        select: "-__v",
-      })
-      .populate({
-        path: "thoughts",
-        select: "-__v",
-      })
-      .select("-__v")
-      .then((dbThoughtData) => res.json(dbThoughtData))
-      .catch((err) => {
-        console.log(err);
-        res.status(400).json(err);
-      });
+  getAllThoughts: async (req, res) => {
+    try {
+      const thoughts = await Thought.find({});
+      res.json(thoughts);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send("Something went wrong");
+    }
   },
   // get one thought by it's id
   getThoughtById({ params }, res) {
@@ -97,14 +89,19 @@ const thoughtController = {
   },
 
   //delete Reaction
-  deleteReaction({ params }, res) {
-    Thought.findOneAndUpdate(
-      { _id: params.thoughtId },
-      { $pull: { reactions: { reactionId: params.reactionId } } },
-      { new: true }
-    )
-      .then((dbThoughtData) => res.json(dbThoughtData))
-      .catch((err) => res.json(err));
+  deleteReaction: async ({ params }, res) => {
+    try {
+        await Thought.findOneAndUpdate(
+            { _id: params.thoughtId },
+            { $pull: { reactions: { _id: params.reactionId } } },
+            { new: true }
+          );
+          res.sendStatus(204);
+    }
+    catch(err) {
+        console.log(err);
+        res.status(500).send('something went wrong')
+    }
   },
 };
 
