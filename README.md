@@ -69,5 +69,5 @@
 * Delete a reaction: `DELETE /api/thoughts/:id/reactions/:id`
 
 # Questions
-* GitHub url where the project is located: 
+* GitHub url where the project is located: https://github.com/Rbenney15/friendzone
 * If you have any questions, please feel free to reach me at: Rob.benney@gmail.com
