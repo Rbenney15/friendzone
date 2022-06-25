@@ -1,7 +1,7 @@
 # Friend Zone - A Social Networking Application
 
 # Description
-* A REST API for a social media app. 
+* A REST API for a social media app. A user can be created, updated, and deleted. A user can get all users or a single user. A user can create, update, and delete a thought. A user can get a single thought or all thoughts. A user has the ability to add and remove friends (other users). A user has the ability to add or remove reactions to other user thoughts.  
 
 # Table of Contents
 * [Description](#description)
