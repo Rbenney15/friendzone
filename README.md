@@ -43,7 +43,7 @@
 * Use your browser or an app like [Insomnia](https://insomnia.rest/) to test the REST API.
 
 # Demo
-* View a walkthrough video of all of the features [here]()
+* View a walkthrough video of all of the features [here](https://drive.google.com/file/d/1xD3LVFRoQqX9d16PNNgOH2FvITFPcEb6/view?usp=sharing)
 
 # Endpoints
 ## User
@@ -64,7 +64,7 @@
 
 ## Reaction
 * Add a reaction: `PUT /api/thoughts/:id/reactions`
-* Delete a reaction: `DELETE /api/thoughts/:id/reactions`
+* Delete a reaction: `DELETE /api/thoughts/:id/reactions/:id`
 
 # Questions
 * GitHub url where the project is located: 
