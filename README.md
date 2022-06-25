@@ -27,6 +27,7 @@
 * Mongoose
 * Express.js
 * Node.js
+* Nodemon
 
 # Installation and Setup
 * Clone this repo to your machine
@@ -34,6 +35,7 @@
 * Install [Mongoose](https://www.npmjs.com/package/mongoose)
 * Install [Node.js](https://nodejs.org/en/download/)
 * Install [Express.js](https://expressjs.com/en/starter/installing.html)
+* Install [Nodemon](https://www.npmjs.com/package/nodemon)
 
 # Usage
 * Make sure you have MongoDB installed on your machine (if you don't, follow the instructions on the [MongoDB Website](https://www.mongodb.com/docs/manual/installation/))
